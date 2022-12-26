@@ -3,33 +3,39 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Harvest | Home</title>
+  <title>Portfolio | Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
   <link rel="stylesheet" media="screen" href="./assets/css/style.css">
+  <link rel="stylesheet" media="screen" href="./assets/font/stylesheet.css">
+
 </head>
 
 <body>
   <!--container start-->
   <div class="container">
+    <!-- PreLoader Start -->
+    <div class="preloader"><div class="counter" data-count="100%">0</div></div>
+    <!-- PreLoader End -->
+
     <!--header section start-->
     <header>
       <div class="wrapper">
-        <h1 class="logo"><a href="#FIXME" title="Mohammed Juned Khan"><span>Mohammed</span><span>Juned Khan</span></a>
+        <h1 class="logo"><a href="#home" title="Mohammed Juned Khan"><span>Khan</span><span>Mohammed Juned</span></a>
         </h1>
         <nav class="navbar">
           <ul class="nav-lists">
-            <li class="list"><a href="#FIXME" title="About">About</a></li>
-            <li class="list"><a href="#FIXME" title="Work">Work</a></li>
-            <li class="list"><a href="#FIXME" title="Services">Services</a></li>
-            <li class="list"><a href="#FIXME" title="Contacts">Contacts</a></li>
+            <li class="list"><a href="" title="About">About</a></li>
+            <li class="list"><a href="" title="Work">Work</a></li>
+            <li class="list"><a href="" title="Services">Services</a></li>
+            <li class="list"><a href="" title="Contacts">Contacts</a></li>
           </ul>
         </nav>
         <div class="hamburger">
-          <div class="Menu"><span>Me</span><span>nu</span></div>
-          <div class="Close"><span>Cl</span><span>se</span></div>
+          <div class="menu"><span>Me</span><span>nu</span></div>
+          <div class="close"><span>Cl</span><span>se</span></div>
         </div>
       </div>
     </header>
@@ -37,15 +43,25 @@
     <!--main section start-->
     <main>
       <!-- Banner Section Start -->
-      <section class="banner-section">
+      <section id="home" class="banner-section">
         <div class="wrapper">
-          <figure class="Banner">
-            <img src="./assets/images/banner-image.png" alt="Banner Image">
+          <figure class="banner">
+            <img src="./assets/images/banner-image.jpg" alt="Banner Image">
             <figcaption>
               <h2 class="name">
-                <span>cr<span class="swap">e</span>a<span class="swap">t</span>iv<span class="swap">e</span></span>
-                <span>de<span class="swap">v</span>el<span class="swap">o</span>pe<span class="swap">r</span></span>
-              </h2>
+                <span class="text1">Creative</span>
+                <span class="text2">developer</span>
+            </h2>
+                <svg id="filters">
+                  <defs>
+                      <filter id="threshold">
+                          <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                                0 1 0 0 0
+                                0 0 1 0 0
+                                0 0 0 255 -140" />
+                      </filter>
+                  </defs>
+                </svg>
             </figcaption>
           </figure>
         </div>
@@ -53,61 +69,61 @@
       <!-- Banner Section End -->
 
       <!-- About Section Start -->
-      <section class="about-section">
+      <section id="about" class="about-section tilt">
         <div class="wrapper">
           <h3 class="about-us">About us</h3>
           <p class="about-us-text">
-            I am a <span>Creative</span> <span>Web Developer</span> primarily focus on turning projects conecpts into
-            reality and develop the best quality <span>website</span>.
-            If you have any Questions, text me on <a href="#FIXME" class="about-anchor"><span>telegram</span></a>
+            I am a <a href="#FIXME" title="Creative Developer"><span data-hover="Creative">Creative</span> <span data-hover="Web">Web</span> <span data-hover="Developer">Developer</span> </a>primarily focus on turning projects conecpts into
+            reality and develop the best quality <a href="#FIXME" title="Creative Developer"><span data-hover="website">website</span></a>.
+            If you have any Questions, text me on <a href="#FIXME" class="about-anchor"><span  data-hover="Telegram">Telegram</span></a>
           </p>
         </div>
       </section>
       <!-- About Section End -->
 
       <!-- Work Section Start -->
-      <section class="work-section">
+      <section id="work" class="work-section tilt">
         <div class="wrapper">
-          <h3 class="work">Work</h3>
+          <h3 class="work-text">Work</h3>
           <ul class="project-lists">
             <li class="list">
               <a href="https://zacoinfotech.com/" title="Zaco Information Technology" target="_blank"
-                rel="noreferrer noopener nofollow">Zaco Information Technology</a>
+                rel="noreferrer noopener nofollow"><span data-hover="Zaco">Zaco</span> <span data-hover="Information">Information</span> <span data-hover="Technology">Technology</span></a>
               <img src="./assets/images/zaco-infotech.png" alt="Zaco Information Technology">
             </li>
             <li class="list">
               <a href="https://zacocomputer.com/" title="Zaco Computers" target="_blank"
-                rel="noreferrer noopener nofollow">Zaco Computers</a>
+                rel="noreferrer noopener nofollow"><span data-hover="Zaco">Zaco</span> <span data-hover="Computers">Computers</span></a>
               <img src="./assets/images/zaco-computer.png" alt="Zaco Computer">
             </li>
             <li class="list">
               <a href="https://macfitind.com/" title="Macfit Industries" target="_blank"
-                rel="noreferrer noopener nofollow">Macfit Industries</a>
+                rel="noreferrer noopener nofollow"><span data-hover="Macfit">Macfit</span> <span data-hover="Industries">Industries</span></a>
               <img src="./assets/images/macfit-industries.png" alt="Macfit Industries">
             </li>
             <li class="list">
               <a href="https://junedkaxioned.github.io/E-Commerce-Website/" title="Wheels on Tars" target="_blank"
-                rel="noreferrer noopener nofollow">Wheels on Tars</a>
+                rel="noreferrer noopener nofollow"><span data-hover="Wheels">Wheels</span> <span data-hover="on">on</span> <span data-hover="Tars">Tars</span></a>
               <img src="./assets/images/wheels-on-tars.png" alt="Wheels on Tars">
             </li>
             <li class="list">
               <a href="https://junedkaxioned.github.io/The-MovieDB/" title="The Movie DB" target="_blank"
-                rel="noreferrer noopener nofollow">The Movie DB</a>
+                rel="noreferrer noopener nofollow"><span data-hover="The Movie">The</span> <span data-hover="Movie">Movie</span> <span data-hover="DB">DB</span></a>
               <img src="./assets/images/The-movie-db.png" alt="The Movie DB">
             </li>
             <li class="list">
               <a href="https://junedkaxioned.github.io/Weather-Api/" title="Weather App" target="_blank"
-                rel="noreferrer noopener nofollow">Weather App</a>
+                rel="noreferrer noopener nofollow"><span data-hover="Weather App">Weather</span> <span data-hover="App">App</span></a>
               <img src="./assets/images/Weather-app.png" alt="Weather Api">
             </li>
             <li class="list">
               <a href="https://junedkaxioned.github.io/Finance-Business/" title="Finance Business" target="_blank"
-                rel="noreferrer noopener nofollow">Finance Business</a>
+                rel="noreferrer noopener nofollow"><span data-hover="Finance Business">Finance</span> <span data-hover="Business">Business</span></a>
               <img src="./assets/images/finance-business.png" alt="Finance Business">
             </li>
             <li class="list">
               <a href="https://junedkaxioned.github.io/The-Economist/" title="The Economist" target="_blank"
-                rel="noreferrer noopener nofollow">The Economist</a>
+                rel="noreferrer noopener nofollow"><span data-hover="The Economist">The</span> <span data-hover="Economist">Economist</span></a>
               <img src="./assets/images/the-economist.png" alt="The Economist">
             </li>
           </ul>
@@ -116,22 +132,22 @@
       <!-- Work Section End -->
 
       <!-- Service Section Start -->
-      <section class="service-section">
+      <section id="service" class="service-section tilt">
         <div class="wrapper">
           <ul class="services">
-            <li class="service-list">
+            <li class="service-list" data-count="01">
               <h4>Creative Websites</h4>
             </li>
-            <li class="service-list">
+            <li class="service-list"  data-count="02">
               <h4>Graphic Designing</h4>
             </li>
-            <li class="service-list">
+            <li class="service-list"  data-count="03">
               <h4>Video Editing</h4>
             </li>
-            <li class="service-list">
+            <li class="service-list"  data-count="04">
               <h4>Social Media Marketing</h4>
             </li>
-            <li class="service-list">
+            <li class="service-list"  data-count="05">
               <h4>Search Engine Optimization</h4>
             </li>
           </ul>
@@ -139,24 +155,33 @@
       </section>
       <!-- Service Section End -->
 
+      <!-- Contact Section Start-->
+      <section id="contact" class="contact-section tilt">
+        <div class="wrapper">
+          <h4><a href="mailto:info@portfolio.com" class="glitch" data-text="info@portfolio.com">info@portfolio.com</a></h4>
+        </div>
+      </section>
+      <!-- Contact Section End-->
+
+
     </main>
     <!--main section end-->
 
     <!--footer section start-->
     <footer>
       <div class="wrapper">
-        <ul class="social-contact">
-          <li class="contact"><a href="#FIXME" title="facebook" target="_blank"
+        <ul class="social-list">
+          <li class="list"><a href="#FIXME" title="facebook" target="_blank"
               rel="noreferrer noopener nofollow">facebook</a></li>
-          <li class="contact"><a href="#FIXME" title="email" target="_blank"
-              rel="noreferrer noopener nofollow">email</a></li>
-          <li class="contact"><a href="#FIXME" title="telegram" target="_blank"
-              rel="noreferrer noopener nofollow">telegram</a></li>
-          <li class="contact"><a href="#FIXME" title="instagram" target="_blank"
+          <li class="list"><a href="#FIXME" title="instagram" target="_blank"
               rel="noreferrer noopener nofollow">instagram</a></li>
-          <li class="contact"><a href="#FIXME" title="linkedin" target="_blank"
+          <li class="list"><a href="#FIXME" title="linkedin" target="_blank"
               rel="noreferrer noopener nofollow">linkedin</a></li>
         </ul>
+        <div class="mode">
+          <span class="day">purple</span>
+          <span class="night active">white</span>
+        </div>
       </div>
     </footer>
     <!--footer section end-->
@@ -164,7 +189,8 @@
   <!--container end-->
 
   <!-- <script src="js/vendors/jquery-1.8.3.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
-
 </html>
